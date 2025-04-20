@@ -1,0 +1,5 @@
+generic_spiders/
+spider_engine.egg-info/
+__pycache__/
+.idea/
+.env
