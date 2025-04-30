@@ -8,17 +8,7 @@
 
 The module is built for integration into data scraping and ETL pipelines.
 
----
 
-## Installation
-
-```bash
-pip install quality-checker  # if published to PyPI
-# or clone manually:
-git clone https://your.repo.url
-```
-
----
 
 ## Dependencies
 
@@ -133,23 +123,3 @@ Applies the loaded rules and returns all records that meet the "bad" criteria.
 Combines the results of missing values check, type validation, and bad record rules into a unified report.
 
 ---
-
-## Notes
-
-This module depends on internal utilities from `sflabutils`:
-
-- `ScrapfinderlabMongoClient` — used to connect to MongoDB
-- `secret_manager` — used to fetch credentials from AWS Secrets Manager
-
-You may substitute these with:
-
-- `pymongo.MongoClient`  
-- `boto3.client('secretsmanager')`
-
----
-
-## Roadmap / TODO
-
-- Logging support  
-- Spark DataFrame support  
-- HTML report generation
